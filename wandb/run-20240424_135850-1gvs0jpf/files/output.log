@@ -1,0 +1,16 @@
+Epoch 1/1
+----------
+Train Loss: 0.8253 Acc: 0.7014
+Val Loss: 5.1088 Acc: 0.2433
+Traceback (most recent call last):
+  File "d:\projects\fish\src\train.py", line 45, in <module>
+    train_model_wandb(model,train_loader,val_loader,criterion,optimizer,1)
+  File "d:\projects\fish\src\helper.py", line 134, in train_model_wandb
+    torch.save(model.state_dict(),'model\resnet18.pth')
+  File "D:\programs\conda\envs\pyfundus\lib\site-packages\torch\serialization.py", line 628, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "D:\programs\conda\envs\pyfundus\lib\site-packages\torch\serialization.py", line 502, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "D:\programs\conda\envs\pyfundus\lib\site-packages\torch\serialization.py", line 473, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+esnet18.pth cannot be opened.

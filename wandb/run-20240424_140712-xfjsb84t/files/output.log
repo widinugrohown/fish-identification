@@ -1,0 +1,8 @@
+Epoch 1/1
+----------
+Traceback (most recent call last):
+  File "d:\projects\fish\src\train.py", line 45, in <module>
+    train_model_wandb(model,train_loader,val_loader,criterion,optimizer,1)
+  File "d:\projects\fish\src\helper.py", line 100, in train_model_wandb
+    running_train_loss += loss.item() * inputs.size(0)
+KeyboardInterrupt
